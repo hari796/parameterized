@@ -67,6 +67,7 @@ public class Baseclass {
 			// WebDriverManager.chromedriver().setup();
 			// WebDriverManager.chromedriver().driverVersion("72.0.3626.81").setup();
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.whitelistedIps", "");
 			//ChromeOptions options = new ChromeOptions();
 			//options.addArguments("headless");
 			//driver = new ChromeDriver(options);
