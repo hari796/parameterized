@@ -63,18 +63,18 @@ public class Baseclass {
 	public static void openBrowser(String browserType) throws Exception {
 
 		switch (browserType) {
-		case "chrome":
+		//case "chrome":
 			// WebDriverManager.chromedriver().setup();
 			// WebDriverManager.chromedriver().driverVersion("72.0.3626.81").setup();
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			System.setProperty("webdriver.chrome.whitelistedIps", "");
+			//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			//System.setProperty("webdriver.chrome.whitelistedIps", "");
 			//ChromeOptions options = new ChromeOptions();
 			//options.addArguments("headless");
 			//driver = new ChromeDriver(options);
          //  ChromeOptions options=new  ChromeOptions().setHeadless(true);
           // driver = new ChromeDriver(options);
-			driver = new ChromeDriver();
-			break;
+			//driver = new ChromeDriver();
+			//break;
 
 		case "internetexplorer":
 			WebDriverManager.iedriver().setup();
