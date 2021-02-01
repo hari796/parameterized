@@ -64,15 +64,15 @@ public class Baseclass {
 
 		switch (browserType) {
 		case "chrome":
-			 WebDriverManager.chromedriver().setup();
-			 //WebDriverManager.chromedriver().driverVersion("86.0.4240.111").setup();
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			System.setProperty("webdriver.chrome.whitelistedIps", "");
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless");
-			driver = new ChromeDriver(options);
-           ChromeOptions options=new  ChromeOptions().setHeadless(true);
-           driver = new ChromeDriver(options);
+			 //WebDriverManager.chromedriver().setup();
+			 WebDriverManager.chromedriver().driverVersion("86.0.4240.111").setup();
+			//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			//System.setProperty("webdriver.chrome.whitelistedIps", "");
+			//ChromeOptions options = new ChromeOptions();
+			//options.addArguments("headless");
+			//driver = new ChromeDriver(options);
+           //ChromeOptions options=new  ChromeOptions().setHeadless(true);
+           //driver = new ChromeDriver(options);
 			driver = new ChromeDriver();
 			break;
 
