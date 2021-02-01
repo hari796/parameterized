@@ -64,8 +64,8 @@ public class Baseclass {
 
 		switch (browserType) {
 		case "chrome":
-			 WebDriverManager.chromedriver().setup();
-			 //WebDriverManager.chromedriver().driverVersion("86.0.4240.111").setup();
+			 //WebDriverManager.chromedriver().setup();
+			 WebDriverManager.chromedriver().driverVersion("86.0.4240.111").setup();
 			//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			//System.setProperty("webdriver.chrome.whitelistedIps", "");
 			//ChromeOptions options = new ChromeOptions();
